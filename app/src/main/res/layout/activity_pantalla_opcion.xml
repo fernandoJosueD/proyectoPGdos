@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    tools:context=".pantallaOpcion">
+
+    <LinearLayout
+        android:id="@+id/botones_de_fechas"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSalir">
+
+        <Button
+            android:id="@+id/btnfechadialogo"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/degradado"
+            android:text="fecha " />
+
+        <TextView
+            android:id="@+id/textfechamarcada"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/degradado"
+            android:gravity="center"
+            android:text="fecha" />
+
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/degradado"
+            android:text="buscar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSalir"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="@drawable/btn_menu"
+        android:gravity="center"
+        android:text="Recomendaciones"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="393dp" />
+
+    <Button
+        android:id="@+id/btnCorrer"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="300dp"
+        android:onClick="btnOnclick"
+        android:text="@string/iniciar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editnombre"
+        android:layout_width="282dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="162dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="397dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/redon_layout"
+        android:elevation="5dp"
+        android:padding="8dp"
+        android:text="TextView"
+        android:textColor="#737373"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.19"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

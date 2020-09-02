@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    //---------datos personales----------------------
+    <string-array name="Genero">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+
+    //-----------------------datos secundarios array-----------------------
+    <string-array name="tomVitamina">
+        <item>si</item>
+        <item>no</item>
+    </string-array>
+
+    <string-array name="tipovitamina">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D </item>
+        <item>E</item>
+        <item>K</item>
+    </string-array>
+
+    <string-array name="nivelesDestres">
+        <item>no</item>
+        <item>bajo</item>
+        <item>medio</item>
+        <item>alto</item>
+    </string-array>
+
+    <string-array name="cuantas_comidas_realiza_a_diario">
+        <item>cuatro tiempos</item>
+        <item>tres tiempos</item>
+        <item>dos tiempos</item>
+        <item>solo una</item>
+    </string-array>
+
+    <string-array name="consume_golosinas">
+        <item>no consumo</item>
+        <item>una vez a la semana</item>
+        <item>varias veces a la semana</item>
+        <item>esporadicamente</item>
+        <item>todos los dias</item>
+    </string-array>
+
+    <string-array name="semanal_actividad">
+        <item>no realizo ejercicio</item>
+        <item>1 dia a la semana</item>
+        <item>2 dias a la semana</item>
+        <item>3 dias a  la semana</item>
+        <item>4 dias a la semana</item>
+        <item>5 dias a la semana</item>
+        <item>6 dias a la semana</item>
+        <item>toda la semana</item>
+    </string-array>
+
+    <string-array name="actividad_fisidca_tiempo">
+        <item>no realizo ejercicio</item>
+        <item>10 minutos</item>
+        <item>20 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+        <item>2 horas</item>
+        <item>variado</item>
+    </string-array>
+    //----------------------------------------------------------
+
+
+    <string-array name="bebidas">
+        <item>ninguna</item>
+        <item>agua natural</item>
+        <item>te u cafe</item>
+        <item>jugo procesado</item>
+        <item>jugo natural</item>
+        <item>licuado de fruta</item>
+        <item>gaseosa</item>
+        <item>cerveza</item>
+        <item>otros</item>
+    </string-array>
+
+    <string-array name="comidas">
+        <item>niguna</item>
+        <item>lacteos</item>
+        <item>carnes</item>
+        <item>vegetales</item>
+        <item>pastas</item>
+        <item>sopas</item>
+        <item>ensaladas</item>
+        <item>mariscos</item>
+        <item>Frutas</item>
+        <item>otros</item>
+    </string-array>
+
+    <string-array name="tiepo_para_omer">
+        <item>20 minutos</item>
+        <item>30 minutos</item>
+        <item>45 minutos</item>
+        <item>60 minutos</item>
+        <item>1:30 minutos</item>
+    </string-array>
+
+    <string-array name="cuanta_hambre_tenia">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="postres">
+        <item>N/A</item>
+        <item>pastel</item>
+        <item>helado</item>
+        <item>fruta</item>
+        <item>otros</item>
+    </string-array>
+
+    <string-array name="comio_en_compania">
+        <item>solo (a)</item>
+        <item>con amigos</item>
+        <item>con mi pareja</item>
+        <item>familiares</item>
+    </string-array>
+
+    <string-array name="postura_durante_comidas">
+        <item>sentado(a) en la mesa</item>
+        <item>en un sillon</item>
+        <item>de pie</item>
+        <item>recostado(a)</item>
+        <item>comodo(a)</item>
+        <item>incomodo(a)</item>
+    </string-array>
+
+    <string-array name="comida">
+        <item>desayuno</item>
+        <item>almuerzo</item>
+        <item>cena</item>
+    </string-array>
+
+</resources>

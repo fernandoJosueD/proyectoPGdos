@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    tools:context=".inserts.setPersona">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_menu"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btnMostrarDatos2"
+            android:layout_width="136dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_menu"
+            android:text="Mostrar Datos"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            tools:layout_editor_absoluteY="686dp" />
+
+        <Button
+            android:id="@+id/btnGuardarDatos"
+            android:layout_width="155dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_menu"
+            android:text="guardar"
+            android:textColor="#F8F5F5"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnMostrarDatos"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline7"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <Button
+            android:id="@+id/btnREGRESAR"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/btn_menu"
+            android:text="terminar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/datosPrincipales"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/transparente_redondo"
+        android:fillViewport="true"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableLayout
+            android:id="@+id/tableprincipales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="66dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnsiguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.454">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="  Primer nombre"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#047A6A"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint=" primer nombre"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="  Segundo nombre"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#047A6A"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextSegundoNombre"
+                    android:layout_width="230dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint="   segundo nombre"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="  Apellido"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#047A6A"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint=" Apellido"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="306dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="  Estatura m²"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#047A6A"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextAltura"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:autoSizeStepGranularity="@android:dimen/app_icon_size"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint="   formato 1.80"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="244dp"
+                    tools:layout_editor_absoluteY="353dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="   Edad"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#047A6A"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextEdad"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint="   edad"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="277dp"
+                    tools:layout_editor_absoluteY="471dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="   Genero"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#047A6A"
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:entries="@array/Genero"
+                    android:gravity="center_horizontal"
+                    tools:layout_editor_absoluteX="53dp"
+                    tools:layout_editor_absoluteY="598dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="   Peso"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#047A6A"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:autoText="false"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint="   Libras"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="358dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="   Oficio"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTexOficio"
+                    android:layout_width="248dp"
+                    android:layout_height="45dp"
+                    android:autoText="false"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint="   oficio"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="358dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="   Centro de estudio"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextEstudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:autoText="false"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint="  centro de esudio"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="358dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="   Facultad"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editTextfacultad"
+                    android:layout_width="230dp"
+                    android:layout_height="45dp"
+                    android:autoText="false"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:hint="   carrera"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="358dp" />
+
+            </TableRow>
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_menu"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/butregresar"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btncirculo_cuadrado"
+            android:text="back"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="guardar datos"
+            android:textColor="#F8F8F8" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textnombre_de_usuario"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:text="usuario"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textcorreoUsario"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="3dp"
+        android:background="#00AE5959"
+        android:gravity="center"
+        android:text="correo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textnombre_de_usuario" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="251dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="175dp" />
+
+    <TextView
+        android:id="@+id/textViewGenero"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textcorreoUsario" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="51dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:background="@drawable/degradado"
+        android:gravity="center"
+        android:text="datos generales de correo gmail"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/imagenusuariogmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/transparente_redondo"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/messenger_button_send_round_shadow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="43dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

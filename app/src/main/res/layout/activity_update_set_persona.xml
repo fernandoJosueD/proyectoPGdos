@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/degradado"
+    tools:context=".inserts.updateSetPersona">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/datosSecundarios"
+        android:layout_width="0dp"
+        android:layout_height="563dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/transparente_redondo"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline13"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="27dp"
+
+            android:layout_marginBottom="66dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnsiguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.454">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarNombre"
+                    android:layout_width="183dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="nombre"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleerNombre"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="primer nombre"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarNombredos"
+                    android:layout_width="183dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="segundo nombre"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleerNombredos"
+                    android:layout_width="189dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="segundo nombre"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarApellido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="apellido"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleerApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="apellido"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="306dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="edad"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleerEdad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="edad"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarPesoLibras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="peso en libras"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleerPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Peso en libras"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="indice de masa muscular"
+                    android:inputType="textPersonName"
+                    android:text="indice de masa muscular"
+                    android:textColor="#ffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textleerIMCpersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:text="indice masa corporal"
+                    android:textColor="#FFFEFE"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarAltura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="altura "
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleerAltura"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="altura"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizaroficio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="area en que labora"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleeroficio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="oficio"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarcentroestudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="centro de estudios"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleercentroestudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="centro de estudio"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/editactualizarfacultad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="facultad o año"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textleerfacultad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="facultad"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/texto"
+                    android:layout_width="166dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btncirculo_cuadrado"
+                    android:gravity="center"
+                    android:text="mi genero es "
+                    android:textColor="#ffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textogenero"
+                    android:layout_width="212dp"
+
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Genero"
+                    android:textColor="#FFFEFE"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_menu"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnReturnMostrarDatos"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btncirculo_cuadrado"
+            android:text="back"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textleertitulo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#00FFFFFF"
+            android:gravity="center|center_vertical"
+            android:text="mostrar y modificar"
+            android:textColor="#EFE6E6"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_menu"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btnMostrarDatos3"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/btn_menu"
+            android:gravity="center"
+            android:text="mostrar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            tools:layout_editor_absoluteY="686dp" />
+
+        <Button
+            android:id="@+id/btnupdateDatosPersonales"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_menu"
+            android:gravity="center"
+            android:text="actualizar"
+            android:textColor="#F8F5F5"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnMostrarDatos"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline7"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <Button
+            android:id="@+id/btnreInicio"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/btn_menu"
+            android:text="terminar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/transparente_redondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textViewemailUsario"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="email"
+            android:textColor="#01685A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textleerFechaIngresoDato"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="fecha"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textleerModificado"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="fecha Modificado"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="688dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="218dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginRight="193dp"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.57"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

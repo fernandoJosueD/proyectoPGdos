@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bitacora Alimenticia</string>
+    <string name="llamada_a_metodo">LLAMADACLASE</string>
+
+    <string name="iniciar">INICIAR</string>
+    <string name="correo">Email</string>
+    <string name="secion">Login</string>
+    <string name="aperturar_secion">Sigup</string>
+</resources>
